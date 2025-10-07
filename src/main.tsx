@@ -4,6 +4,7 @@ import App from "./App.tsx";
 import { Provider } from "./components/ui/provider.tsx";
 import "./index.css";
 
+// biome-ignore lint: React configuration
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Provider forcedTheme="dark">
