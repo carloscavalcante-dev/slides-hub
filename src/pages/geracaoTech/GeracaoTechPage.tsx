@@ -1,7 +1,5 @@
-import Header from "@/components/layout/Header";
-import SlideCard, {
-  type ISlideCardProps,
-} from "@/components/slideCard/SlideCard";
+import { Header } from "@/components/layout";
+import { type ISlideCardProps, SlideCard } from "@/components/slideCard";
 import { Container } from "@chakra-ui/react";
 import { Modulo1Apresentation } from "./modulos";
 

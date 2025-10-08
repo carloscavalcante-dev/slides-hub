@@ -1,4 +1,4 @@
-import type { ISlideCardProps } from "@/components/slideCard/SlideCard";
+import type { ISlideCardProps } from "@/components/slideCard";
 import { BootCampApresentationSlide } from "@/slides/apresentacoes/bootcamp";
 import JQueryApresentationSlide from "@/slides/apresentacoes/jquery";
 
@@ -18,16 +18,17 @@ export const slideApresetnationsData: ISlideData[] = [
     },
     prevSlide: JQueryApresentationSlide,
     tags: ["Apresentação"],
-  }, {
+  },
+  {
     id: "2",
     date: "05/07/2025",
     title: "Bootcamp apresentação",
     description: "bootcamp",
     link: {
       label: "Ir para o slide",
-      path: "/apresentacoes/bootcamp"
+      path: "/apresentacoes/bootcamp",
     },
     prevSlide: BootCampApresentationSlide,
-    tags: ["Apresentação"]
-  }
+    tags: ["Apresentação"],
+  },
 ];

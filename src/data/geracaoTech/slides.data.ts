@@ -1,4 +1,4 @@
-import type { ISlideCardProps } from "@/components/slideCard/SlideCard";
+import type { ISlideCardProps } from "@/components/slideCard";
 import { DevWebIntroductionRoom1 } from "@/slides/geracaoTech";
 
 interface ISlideData extends ISlideCardProps {

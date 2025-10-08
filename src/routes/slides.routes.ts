@@ -1,6 +1,7 @@
 import { BootCampApresentationSlide } from "@/slides/apresentacoes/bootcamp";
 import JQueryApresentationSlide from "@/slides/apresentacoes/jquery";
 import { DevWebIntroductionRoom1 } from "@/slides/geracaoTech";
+import RoomNode07102025 from "@/slides/houseJS/room-node-07-10-25";
 import type React from "react";
 
 interface ISlideRoutesSchema {
@@ -20,6 +21,10 @@ export const slideRoutesSchema: ISlideRoutesSchema[] = [
   },
   {
     path: "/apresentacoes/bootcamp",
-    element: BootCampApresentationSlide
-  }
+    element: BootCampApresentationSlide,
+  },
+  {
+    path: "/housejs/08-10-25/aulao-node",
+    element: RoomNode07102025,
+  },
 ];

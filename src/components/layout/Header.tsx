@@ -1,8 +1,8 @@
 import { Container, Icon } from "@chakra-ui/react";
-import Navbar from "./Navbar";
+import { Navbar } from "./Navbar";
 import { MdOutlineSlideshow } from "react-icons/md";
 
-const Header = () => {
+export const Header = () => {
   return (
     <Container
       as="header"
@@ -25,5 +25,3 @@ const Header = () => {
     </Container>
   );
 };
-
-export default Header;

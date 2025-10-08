@@ -1,5 +1,5 @@
-import Header from "@/components/layout/Header";
-import SlideCard from "@/components/slideCard/SlideCard";
+import { Header } from "@/components/layout/";
+import { SlideCard } from "@/components/slideCard";
 import { slideData } from "@/data/houseJS/slides.data";
 import { Container } from "@chakra-ui/react";
 
