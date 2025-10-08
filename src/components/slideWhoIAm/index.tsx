@@ -1,12 +1,13 @@
 import { Box, Heading } from "@chakra-ui/react";
-import fotoPadrao from "@/assets/foto-padrao.jpg";
+import { profileImage } from "./assets";
 
-const WhoIAm = () => {
+export const WhoIAm = () => {
   const topics = [
     "Ex geração Tech;",
     "Formado em JavaScript pelas ruas;",
     "Especialista em gambiarras;",
-    "Front End Developer;",
+    "faz de tudo developer;",
+    "Professor quando da certo;",
     "Desenvolvedor Full Stack (Fiec).",
   ];
 
@@ -17,7 +18,6 @@ const WhoIAm = () => {
           as="h3"
           position="relative"
           w="fit-content"
-          className="fragment fade-in"
           _after={{
             content: "''",
             w: "30%",
@@ -32,7 +32,15 @@ const WhoIAm = () => {
         </Heading>
       </section>
       <section data-vertical-align-top>
-        <Box as="div" w="100%" h="100%" display="flex" gap="10">
+        <Box
+          as="div"
+          w="100%"
+          h="100%"
+          display="flex"
+          gap={{ base: 5, md: 10 }}
+          flexDirection={{ base: "column", md: "row" }}
+          alignItems="center"
+        >
           <Box>
             <Heading as="h3" className="fragment">
               Carlos Eduardo
@@ -52,12 +60,10 @@ const WhoIAm = () => {
             </ul>
           </Box>
           <Box w="20rem">
-            <img src={fotoPadrao} alt="Foto de perfil" width="100%" />
+            <img src={profileImage} alt="Foto de perfil" width="100%" />
           </Box>
         </Box>
       </section>
     </>
   );
 };
-
-export default WhoIAm;

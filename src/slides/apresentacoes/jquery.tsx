@@ -1,81 +1,78 @@
-import BaseSlide from "@/components/baseSlide/BaseSlide";
-import CodeBlock from "@/components/codeBlock/CodeBlock";
-import { Heading } from "@chakra-ui/react";
-import dogsClab from "./assets/dogs-clap.gif";
-import chicken from "./assets/galo-vinho.gif";
+import BaseSlide from "@/components/baseSlide";
 
 const JQueryApresentationSlide = () => {
-  function renderHTMLAjaxCode() {
-    return `
-  <!-- Navegador controla -->
+  // function _renderHTMLAjaxCode() {
+  //   return `
+  // <!-- Navegador controla -->
 
-  <form 
-    action="/user/create" 
-    method="POST">
-    <input name="email">
-    <button>Submit</button>
-  </form>
-    `;
-  }
+  // <form 
+  //   action="/user/create" 
+  //   method="POST">
+  //   <input name="email">
+  //   <button>Submit</button>
+  // </form>
+  //   `;
+  // }
 
-  function renderFetchAjaxCode() {
-    return `
-  // Js controla
+  // function _renderFetchAjaxCode() {
+  //   return `
+  // // Js controla
 
-  fetch("/user/create", {
-    method: "POST",
-    body: JSON.stringify(body),
-    headers: {
-      Content: "application/json"
-    }
-  })
-    `;
-  }
+  // fetch("/user/create", {
+  //   method: "POST",
+  //   body: JSON.stringify(body),
+  //   headers: {
+  //     Content: "application/json"
+  //   }
+  // })
+  //   `;
+  // }
 
-  function renderXMLHtttpRequest() {
-    return `
-  const xhr = new XMLHttpRequest();
-  xhr.open("GET", "https://api.exemplo.com/dados", true);
+  // function _renderXMLHtttpRequest() {
+  //   return `
+  // const xhr = new XMLHttpRequest();
+  // xhr.open("GET", "https://api.exemplo.com/dados", true);
 
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      console.log("Resposta:", xhr.responseText);
-    }
-  };
+  // xhr.onreadystatechange = function () {
+  //   if (xhr.readyState === 4 && xhr.status === 200) {
+  //     console.log("Resposta:", xhr.responseText);
+  //   }
+  // };
 
-  xhr.send();
-    `;
-  }
+  // xhr.send();
+  //   `;
+  // }
 
-  function renderAjaxRequest() {
-    return `
-  // Com JQuery
+  // function _renderAjaxRequest() {
+  //   return `
+  // // Com JQuery
 
-  $.ajax({
-    url: "/user/create",
-    method: "POST",
-    data: { nome: "Carlos" },
-    success: function (resposta) {
-      console.log("Sucesso!", resposta);
-    },
-  });
-    `;
-  }
+  // $.ajax({
+  //   url: "/user/create",
+  //   method: "POST",
+  //   data: { nome: "Carlos" },
+  //   success: function (resposta) {
+  //     console.log("Sucesso!", resposta);
+  //   },
+  // });
+  //   `;
+  // }
 
-  function renderJqueryError() {
-    return `
-  // Tudo em um só script
-  $(".btn").click(() => {
-    const nome = $("#nome").val();
-    $("#resposta").text("Olá " + nome);
-    // Validação inline, sem modularização
-  });
-    `;
-  }
+  // function _renderJqueryError() {
+  //   return `
+  // // Tudo em um só script
+  // $(".btn").click(() => {
+  //   const nome = $("#nome").val();
+  //   $("#resposta").text("Olá " + nome);
+  //   // Validação inline, sem modularização
+  // });
+  //   `;
+  // }
 
   return (
     <BaseSlide>
-      <section data-background-color="white">
+      <section>Em manutenção</section>
+      {/* <section data-background-color="white">
         <Heading as="h2">JQuery: o futuro do passado</Heading>
       </section>
       <section data-background-color="white">
@@ -191,7 +188,7 @@ const JQueryApresentationSlide = () => {
         <div className="flex justify-center">
           <img src={chicken} alt="" />
         </div>
-      </section>
+      </section> */}
     </BaseSlide>
   );
 };

@@ -1,9 +1,9 @@
-import { baseRoutesSchema } from "@/routes/base.schema.routes";
+import { baseRoutesSchema } from "@/routes/base.routes";
 import { IconButton, Menu, Portal, Tabs } from "@chakra-ui/react";
 import { TfiMenuAlt } from "react-icons/tfi";
 import { Link, useLocation } from "react-router-dom";
 
-const Navbar = () => {
+export const Navbar = () => {
   const { pathname } = useLocation();
 
   return (
@@ -56,13 +56,11 @@ const Navbar = () => {
       <Tabs.Root
         aria-label="Barra de navegação"
         variant="plain"
-        maxW="md"
         fitted
         defaultValue={pathname}
-        width="20rem"
         display={{ base: "none", md: "block" }}
       >
-        <Tabs.List bg="gray.800" gap="2" p="1.5" rounded="md">
+        <Tabs.List bg="gray.800" gap="2" p="1.5" rounded="md" w="md">
           {baseRoutesSchema.map((route) => (
             <Tabs.Trigger
               key={route.label}
@@ -70,6 +68,7 @@ const Navbar = () => {
               fontWeight="bold"
               letterSpacing="tight"
               color="gray.100"
+              whiteSpace="nowrap"
               asChild
               _selected={{
                 color: "gray.900",
@@ -88,5 +87,3 @@ const Navbar = () => {
     </>
   );
 };
-
-export default Navbar;

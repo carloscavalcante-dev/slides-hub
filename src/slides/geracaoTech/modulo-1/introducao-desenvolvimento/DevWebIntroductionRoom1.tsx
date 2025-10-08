@@ -1,5 +1,5 @@
-import BaseSlide from "@/components/baseSlide/BaseSlide";
-import WhoIAm from "@/components/slideWhoIAm/WhoIAm";
+import BaseSlide from "@/components/baseSlide";
+import { WhoIAm } from "@/components/slideWhoIAm";
 import { Box, Heading } from "@chakra-ui/react";
 import picapau from "@/assets/picapau-biruta.jpg";
 import logoGT from "@/assets/logo-gt.png";

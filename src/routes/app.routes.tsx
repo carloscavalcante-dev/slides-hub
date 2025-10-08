@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { baseRoutesSchema } from "./base.schema.routes";
-import { slideRoutesSchema } from "./slides.schema.routes";
+import { baseRoutesSchema } from "./base.routes";
+import { slideRoutesSchema } from "./slides.routes";
 
 const AppRoutes = () => {
   return (

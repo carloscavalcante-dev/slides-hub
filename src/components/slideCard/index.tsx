@@ -3,7 +3,7 @@ import { Box, Button, Card, Tag, Text } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
 
-type TTags = "Youtube" | "Html" | "Apresentação";
+type TTags = "Youtube" | "Html" | "Apresentação" | "House Js" | "Node";
 
 interface ILinkCard {
   path: string;
@@ -19,7 +19,7 @@ export interface ISlideCardProps {
   tags: TTags[];
 }
 
-const SlideCard = ({
+export const SlideCard = ({
   prevSlide,
   title,
   description,
@@ -50,7 +50,12 @@ const SlideCard = ({
       case "Apresentação":
         tagColor = "green";
         return tagColor;
-
+      case "Node":
+        tagColor = "green";
+        return tagColor;
+      case "House Js":
+        tagColor = "orange";
+        return tagColor;
       default:
         return tagColor;
     }
@@ -109,5 +114,3 @@ const SlideCard = ({
     </Card.Root>
   );
 };
-
-export default SlideCard;

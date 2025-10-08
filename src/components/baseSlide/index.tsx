@@ -19,7 +19,7 @@ const BaseSlide = ({ children }: IPropsBaseSlide) => {
         transition: "slide",
         embedded: true,
       });
-      deckRef.current.initialize().then(() => {});
+      deckRef.current.initialize();
     }
 
     return () => {

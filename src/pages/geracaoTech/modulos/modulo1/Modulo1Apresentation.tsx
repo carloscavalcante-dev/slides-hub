@@ -1,4 +1,4 @@
-import BaseSlide from "@/components/baseSlide/BaseSlide";
+import BaseSlide from "@/components/baseSlide";
 import { Box } from "@chakra-ui/react";
 
 interface ITopics {
