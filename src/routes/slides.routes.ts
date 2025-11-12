@@ -1,3 +1,4 @@
+import { GenerationMeeting141125 } from "@/slides/apresentacoes/14-11-25-encontro-de-geracoes-";
 import { BootCampApresentationSlide } from "@/slides/apresentacoes/bootcamp";
 import JQueryApresentationSlide from "@/slides/apresentacoes/jquery";
 import { DevWebIntroductionRoom1 } from "@/slides/geracaoTech";
@@ -26,5 +27,9 @@ export const slideRoutesSchema: ISlideRoutesSchema[] = [
   {
     path: "/housejs/08-10-25/aulao-node",
     element: RoomNode07102025,
+  },
+  {
+    path: "/apresentacoes/encontro-geracoes-14-11-25",
+    element: GenerationMeeting141125,
   },
 ];
